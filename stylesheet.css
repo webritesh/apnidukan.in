@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(0, 255, 55);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: rgb(232, 230, 241);
+
+}
+img{
+    height: 100px;
+    width: 200px;
+    margin-left: 70px;
+    
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.form_containter{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+    width: 350px;
+
+}
+.label_div{
+    margin-top: 10px;
+
+}
+.txt_field{
+    margin: 10px;
+}
+input:focus{
+    outline: 3px solid #4d90fe;
+}
+
+
+input{
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+}
+input[type="button"]{
+    margin: 10px;
+    width: 100px;
+    margin-left: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+
+
+}
+/* forget pass */
+.forget_password{
+    margin-top: 20px;
+    float: left;
+}
+.forget_password a{
+    color: rgb(248, 7, 7);
+    text-decoration: none;
+}
+
+
+/* sign in */
+.Signin{
+    margin-top: 20px;
+    float: right;
+}
+.Signin  a{
+    color: rgb(217, 13, 61);
+    text-decoration: none;
+}
+
+
+input[type="button"]:hover{
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
+
+
