@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	
+    <style>
+        .container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f7f7f7;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: #e6e6e6;
+}
+
+button {
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+    </style>
+</head>
+<body>
+	<div class="container">
+		<form id="registration-form" method="post">
+			<h2>Registration Form</h2>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<label for="confirm-password">Confirm Password</label>
+			<input type="password" id="confirm-password" name="confirm-password" required>
+			<button type="submit">Register</button>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+<script>
+    const form = document.getElementById("registration-form");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const confirmPassword = document.getElementById("confirm-password");
+
+form.addEventListener("submit", (event) => {
+	event.preventDefault();
+	
+	if (password.value !== confirmPassword.value) {
+		alert("Passwords do not match");
+		return;
+	}
+	
+	// Do something with the form data, e.g. submit it to a server
+});
+
+</script>
+</html>
